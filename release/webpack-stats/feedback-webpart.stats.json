@@ -1,0 +1,1670 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.2",
+  "hash": "15d289e163e8e10fded2",
+  "time": 3923,
+  "builtAt": 1640521318879,
+  "publicPath": "",
+  "outputPath": "C:\\SharepointJS\\feedback-webpart\\dist",
+  "assetsByChunkName": {
+    "feedback-web-part": [
+      "feedback-web-part.js",
+      "feedback-web-part.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "82f26d6a-130a-4875-a0fe-9984ddea09b6.manifest.json",
+      "size": 1979,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "FeedbackWebPartStrings_en-us.js",
+      "size": 173,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "feedback-web-part.js",
+      "size": 32096,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "chunkNames": [
+        "feedback-web-part"
+      ],
+      "info": {},
+      "emitted": true
+    },
+    {
+      "name": "feedback-web-part.js.map",
+      "size": 30916,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "chunkNames": [
+        "feedback-web-part"
+      ],
+      "info": {
+        "development": true
+      },
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "feedback-web-part": {
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "assets": [
+        "feedback-web-part.js",
+        "feedback-web-part.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "feedback-web-part": {
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "assets": [
+        "feedback-web-part.js",
+        "feedback-web-part.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "feedback-web-part",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 21093,
+      "names": [
+        "feedback-web-part"
+      ],
+      "files": [
+        "feedback-web-part.js",
+        "feedback-web-part.js.map"
+      ],
+      "hash": "84ca4acf94d8c9f9215a",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [
+        {
+          "id": "26ea",
+          "identifier": "external \"@microsoft/sp-property-pane\"",
+          "name": "external \"@microsoft/sp-property-pane\"",
+          "index": 2,
+          "index2": 1,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "issuerId": "KnG4",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-property-pane",
+              "loc": "15:0-68"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-property-pane",
+              "loc": "96:32-53"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": "JPst",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\runtime\\api.js",
+          "name": "./node_modules/css-loader/dist/runtime/api.js",
+          "index": 8,
+          "index2": 4,
+          "size": 2677,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "issuerId": "qUP5",
+          "issuerName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            },
+            {
+              "id": "WUD2",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+            },
+            {
+              "id": "SmlZ",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.module.css"
+            },
+            {
+              "id": "qUP5",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "qUP5",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css",
+              "type": "cjs require",
+              "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "1:27-90"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 4,
+          "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \"{\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      // eslint-disable-next-line prefer-destructuring\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = modules[_i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = \"(\".concat(item[2], \") and (\").concat(mediaQuery, \")\");\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot).concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}"
+        },
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "index": 0,
+          "index2": 12,
+          "size": 5314,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": null,
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "type": "single entry",
+              "userRequest": "C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "loc": "feedback-web-part"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { Version } from '@microsoft/sp-core-library';\r\nimport { PropertyPaneTextField } from '@microsoft/sp-property-pane';\r\nimport { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';\r\nimport { escape } from '@microsoft/sp-lodash-subset';\r\nimport styles from './FeedbackWebPart.module.scss';\r\nimport * as strings from 'FeedbackWebPartStrings';\r\nimport { SPHttpClient } from '@microsoft/sp-http';\r\nimport { Environment, EnvironmentType } from '@microsoft/sp-core-library';\r\nvar FeedbackWebPart = /** @class */ (function (_super) {\r\n    __extends(FeedbackWebPart, _super);\r\n    function FeedbackWebPart() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    FeedbackWebPart.prototype.render = function () {\r\n        debugger;\r\n        this.domElement.innerHTML = \"\\n    <div>\\n    <i class='ms-Icon ms-Icon--NoteForward' aria-hidden='true'></i>\\n    <input type='text' class='\" + styles.input + \"' maxlenght='255' placeholder='\" + escape(this.properties.hintText) + \"' />\\n    <button type='button' class='ms-Button'><span class='ms-Button-label'>Send</span></button>\\n    <p class='\" + styles.successIndicator + \"'></p>\\n  </div>\";\r\n        this.setComment = this.setComment.bind(this);\r\n        this.sendFeedback = this.sendFeedback.bind(this);\r\n        var textInput = this.domElement.getElementsByTagName(\"INPUT\")[0];\r\n        textInput.addEventListener(\"keyup\", this.setComment);\r\n        var button = this.domElement.getElementsByTagName(\"BUTTON\")[0];\r\n        button.onclick = this.sendFeedback;\r\n    };\r\n    FeedbackWebPart.prototype.setComment = function (event) {\r\n        debugger;\r\n        var srcElement = event.srcElement;\r\n        this._commentText = escape(srcElement.value);\r\n    };\r\n    FeedbackWebPart.prototype.sendFeedback = function () {\r\n        var _this = this;\r\n        debugger;\r\n        this.context.statusRenderer.clearError(this.domElement);\r\n        var paragraphElement = this.domElement.getElementsByClassName(styles.successIndicator)[0];\r\n        paragraphElement.innerHTML = \"\";\r\n        if (this._commentText === undefined || this._commentText.length === 0) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Please type in a comment or suggestion.\");\r\n            return;\r\n        }\r\n        if (Environment.type === EnvironmentType.Local) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Feedback can't be saved when running in local workbech.\");\r\n            return;\r\n        }\r\n        debugger;\r\n        var url = this.context.pageContext.site.absoluteUrl + \"/_api/web/lists/getbytitle('Feedback')/items\";\r\n        var item = {\r\n            \"Title\": this._commentText,\r\n            \"url\": window.location.href\r\n        };\r\n        var spHttpClientOptions = {\r\n            \"body\": JSON.stringify(item)\r\n        };\r\n        this.context.statusRenderer.displayLoadingIndicator(paragraphElement, \"- Sending feedback\");\r\n        this.context.spHttpClient.post(url, SPHttpClient.configurations.v1, spHttpClientOptions)\r\n            .then(function (response) {\r\n            _this.context.statusRenderer.clearLoadingIndicator(paragraphElement);\r\n            if (response.status === 201) {\r\n                _this.domElement.getElementsByClassName(styles.successIndicator)[0]\r\n                    .innerHTML = \"<i class='ms-Icon ms-Icon--Accept' aria-hidden='true'>&nbsp;Thank you for the feedback!</i>\";\r\n            }\r\n            else {\r\n                _this.context.statusRenderer.renderError(_this.domElement, \"Failed to save feedback. Error code: \" + response.statusText + \" (\" + response.status + \")\");\r\n            }\r\n        });\r\n    };\r\n    Object.defineProperty(FeedbackWebPart.prototype, \"dataVersion\", {\r\n        get: function () {\r\n            return Version.parse('1.0');\r\n        },\r\n        enumerable: false,\r\n        configurable: true\r\n    });\r\n    FeedbackWebPart.prototype.getPropertyPaneConfiguration = function () {\r\n        return {\r\n            pages: [\r\n                {\r\n                    header: {\r\n                        description: strings.PropertyPaneDescription\r\n                    },\r\n                    groups: [\r\n                        {\r\n                            groupName: strings.BasicGroupName,\r\n                            groupFields: [\r\n                                PropertyPaneTextField('description', {\r\n                                    label: strings.HintTextFieldLabel\r\n                                })\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        };\r\n    };\r\n    return FeedbackWebPart;\r\n}(BaseClientSideWebPart));\r\nexport default FeedbackWebPart;\r\n"
+        },
+        {
+          "id": "Pk8u",
+          "identifier": "external \"@microsoft/sp-lodash-subset\"",
+          "name": "external \"@microsoft/sp-lodash-subset\"",
+          "index": 4,
+          "index2": 3,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "issuerId": "KnG4",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-lodash-subset",
+              "loc": "17:0-53"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-lodash-subset",
+              "loc": "29:204-210"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-lodash-subset",
+              "loc": "40:28-34"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": "SmlZ",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "index": 6,
+          "index2": 8,
+          "size": 565,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+          "issuerId": "WUD2",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            },
+            {
+              "id": "WUD2",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "WUD2",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js",
+              "type": "cjs require",
+              "userRequest": "./FeedbackWebPart.module.css",
+              "loc": "2:0-39"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 2,
+          "source": "var content = require(\"!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src/index.js??postcss!./FeedbackWebPart.module.css\");\nvar loader = require(\"C:\\\\SharepointJS\\\\feedback-webpart\\\\node_modules\\\\@microsoft\\\\loader-load-themed-styles\\\\node_modules\\\\@microsoft\\\\load-themed-styles\\\\lib\\\\index.js\");\n\nif(typeof content === \"string\") content = [[module.id, content]];\n\n// add the styles to the DOM\nfor (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);\n\nif(content.locals) module.exports = content.locals;"
+        },
+        {
+          "id": "UWqr",
+          "identifier": "external \"@microsoft/sp-core-library\"",
+          "name": "external \"@microsoft/sp-core-library\"",
+          "index": 1,
+          "index2": 0,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "issuerId": "KnG4",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-core-library",
+              "loc": "14:0-53"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-core-library",
+              "loc": "21:0-74"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-core-library",
+              "loc": "52:12-23"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-core-library",
+              "loc": "52:33-48"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-core-library",
+              "loc": "80:19-26"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": "WUD2",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js",
+          "index": 5,
+          "index2": 9,
+          "size": 211,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "issuerId": "KnG4",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "./FeedbackWebPart.module.scss",
+              "loc": "18:0-51"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "./FeedbackWebPart.module.scss",
+              "loc": "29:153-159"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "./FeedbackWebPart.module.scss",
+              "loc": "29:360-366"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "./FeedbackWebPart.module.scss",
+              "loc": "46:70-76"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "./FeedbackWebPart.module.scss",
+              "loc": "70:56-62"
+            }
+          ],
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "/* tslint:disable */\r\nrequire(\"./FeedbackWebPart.module.css\");\r\nvar styles = {\r\n    input: 'input_513b35c0',\r\n    successIndicator: 'successIndicator_513b35c0'\r\n};\r\nexport default styles;\r\n/* tslint:enable */ \r\n"
+        },
+        {
+          "id": "br4S",
+          "identifier": "external \"@microsoft/sp-webpart-base\"",
+          "name": "external \"@microsoft/sp-webpart-base\"",
+          "index": 3,
+          "index2": 2,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "issuerId": "KnG4",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-webpart-base",
+              "loc": "16:0-67"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-webpart-base",
+              "loc": "107:2-23"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": "e9Hm",
+          "identifier": "external \"FeedbackWebPartStrings\"",
+          "name": "external \"FeedbackWebPartStrings\"",
+          "index": 11,
+          "index2": 10,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "issuerId": "KnG4",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "FeedbackWebPartStrings",
+              "loc": "19:0-50"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "FeedbackWebPartStrings",
+              "loc": "90:37-68"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "FeedbackWebPartStrings",
+              "loc": "94:39-61"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "FeedbackWebPartStrings",
+              "loc": "97:43-69"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": "qUP5",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "index": 7,
+          "index2": 5,
+          "size": 242,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "issuerId": "SmlZ",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            },
+            {
+              "id": "WUD2",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+            },
+            {
+              "id": "SmlZ",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.module.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "SmlZ",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+              "type": "cjs require",
+              "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src/index.js??postcss!./FeedbackWebPart.module.css",
+              "loc": "1:14-159"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 3,
+          "source": "exports = module.exports = require(\"../../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \".input_513b35c0{border:1px solid grey;width:50%;margin:0 10px}.successIndicator_513b35c0{border:0}\", \"\"]);\n"
+        },
+        {
+          "id": "ruv1",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+          "name": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js",
+          "index": 9,
+          "index2": 7,
+          "size": 11360,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "issuerId": "SmlZ",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            },
+            {
+              "id": "WUD2",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+            },
+            {
+              "id": "SmlZ",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.module.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "SmlZ",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+              "type": "cjs require",
+              "userRequest": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+              "loc": "2:13-172"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 3,
+          "source": "\"use strict\";\n// Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.\n// See LICENSE in the project root for license information.\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.splitStyles = exports.detokenize = exports.clearStyles = exports.loadTheme = exports.flush = exports.configureRunMode = exports.configureLoadStyles = exports.loadStyles = void 0;\n// Store the theming state in __themeState__ global scope for reuse in the case of duplicate\n// load-themed-styles hosted on the page.\nvar _root = typeof window === 'undefined' ? global : window; // eslint-disable-line @typescript-eslint/no-explicit-any\n// Nonce string to inject into script tag if one provided. This is used in CSP (Content Security Policy).\nvar _styleNonce = _root && _root.CSPSettings && _root.CSPSettings.nonce;\nvar _themeState = initializeThemeState();\n/**\n * Matches theming tokens. For example, \"[theme: themeSlotName, default: #FFF]\" (including the quotes).\n */\nvar _themeTokenRegex = /[\\'\\\"]\\[theme:\\s*(\\w+)\\s*(?:\\,\\s*default:\\s*([\\\\\"\\']?[\\.\\,\\(\\)\\#\\-\\s\\w]*[\\.\\,\\(\\)\\#\\-\\w][\\\"\\']?))?\\s*\\][\\'\\\"]/g;\nvar now = function () {\n    return typeof performance !== 'undefined' && !!performance.now ? performance.now() : Date.now();\n};\nfunction measure(func) {\n    var start = now();\n    func();\n    var end = now();\n    _themeState.perf.duration += end - start;\n}\n/**\n * initialize global state object\n */\nfunction initializeThemeState() {\n    var state = _root.__themeState__ || {\n        theme: undefined,\n        lastStyleElement: undefined,\n        registeredStyles: []\n    };\n    if (!state.runState) {\n        state = __assign(__assign({}, state), { perf: {\n                count: 0,\n                duration: 0\n            }, runState: {\n                flushTimer: 0,\n                mode: 0 /* sync */,\n                buffer: []\n            } });\n    }\n    if (!state.registeredThemableStyles) {\n        state = __assign(__assign({}, state), { registeredThemableStyles: [] });\n    }\n    _root.__themeState__ = state;\n    return state;\n}\n/**\n * Loads a set of style text. If it is registered too early, we will register it when the window.load\n * event is fired.\n * @param {string | ThemableArray} styles Themable style text to register.\n * @param {boolean} loadAsync When true, always load styles in async mode, irrespective of current sync mode.\n */\nfunction loadStyles(styles, loadAsync) {\n    if (loadAsync === void 0) { loadAsync = false; }\n    measure(function () {\n        var styleParts = Array.isArray(styles) ? styles : splitStyles(styles);\n        var _a = _themeState.runState, mode = _a.mode, buffer = _a.buffer, flushTimer = _a.flushTimer;\n        if (loadAsync || mode === 1 /* async */) {\n            buffer.push(styleParts);\n            if (!flushTimer) {\n                _themeState.runState.flushTimer = asyncLoadStyles();\n            }\n        }\n        else {\n            applyThemableStyles(styleParts);\n        }\n    });\n}\nexports.loadStyles = loadStyles;\n/**\n * Allows for customizable loadStyles logic. e.g. for server side rendering application\n * @param {(processedStyles: string, rawStyles?: string | ThemableArray) => void}\n * a loadStyles callback that gets called when styles are loaded or reloaded\n */\nfunction configureLoadStyles(loadStylesFn) {\n    _themeState.loadStyles = loadStylesFn;\n}\nexports.configureLoadStyles = configureLoadStyles;\n/**\n * Configure run mode of load-themable-styles\n * @param mode load-themable-styles run mode, async or sync\n */\nfunction configureRunMode(mode) {\n    _themeState.runState.mode = mode;\n}\nexports.configureRunMode = configureRunMode;\n/**\n * external code can call flush to synchronously force processing of currently buffered styles\n */\nfunction flush() {\n    measure(function () {\n        var styleArrays = _themeState.runState.buffer.slice();\n        _themeState.runState.buffer = [];\n        var mergedStyleArray = [].concat.apply([], styleArrays);\n        if (mergedStyleArray.length > 0) {\n            applyThemableStyles(mergedStyleArray);\n        }\n    });\n}\nexports.flush = flush;\n/**\n * register async loadStyles\n */\nfunction asyncLoadStyles() {\n    return setTimeout(function () {\n        _themeState.runState.flushTimer = 0;\n        flush();\n    }, 0);\n}\n/**\n * Loads a set of style text. If it is registered too early, we will register it when the window.load event\n * is fired.\n * @param {string} styleText Style to register.\n * @param {IStyleRecord} styleRecord Existing style record to re-apply.\n */\nfunction applyThemableStyles(stylesArray, styleRecord) {\n    if (_themeState.loadStyles) {\n        _themeState.loadStyles(resolveThemableArray(stylesArray).styleString, stylesArray);\n    }\n    else {\n        registerStyles(stylesArray);\n    }\n}\n/**\n * Registers a set theme tokens to find and replace. If styles were already registered, they will be\n * replaced.\n * @param {theme} theme JSON object of theme tokens to values.\n */\nfunction loadTheme(theme) {\n    _themeState.theme = theme;\n    // reload styles.\n    reloadStyles();\n}\nexports.loadTheme = loadTheme;\n/**\n * Clear already registered style elements and style records in theme_State object\n * @param option - specify which group of registered styles should be cleared.\n * Default to be both themable and non-themable styles will be cleared\n */\nfunction clearStyles(option) {\n    if (option === void 0) { option = 3 /* all */; }\n    if (option === 3 /* all */ || option === 2 /* onlyNonThemable */) {\n        clearStylesInternal(_themeState.registeredStyles);\n        _themeState.registeredStyles = [];\n    }\n    if (option === 3 /* all */ || option === 1 /* onlyThemable */) {\n        clearStylesInternal(_themeState.registeredThemableStyles);\n        _themeState.registeredThemableStyles = [];\n    }\n}\nexports.clearStyles = clearStyles;\nfunction clearStylesInternal(records) {\n    records.forEach(function (styleRecord) {\n        var styleElement = styleRecord && styleRecord.styleElement;\n        if (styleElement && styleElement.parentElement) {\n            styleElement.parentElement.removeChild(styleElement);\n        }\n    });\n}\n/**\n * Reloads styles.\n */\nfunction reloadStyles() {\n    if (_themeState.theme) {\n        var themableStyles = [];\n        for (var _i = 0, _a = _themeState.registeredThemableStyles; _i < _a.length; _i++) {\n            var styleRecord = _a[_i];\n            themableStyles.push(styleRecord.themableStyle);\n        }\n        if (themableStyles.length > 0) {\n            clearStyles(1 /* onlyThemable */);\n            applyThemableStyles([].concat.apply([], themableStyles));\n        }\n    }\n}\n/**\n * Find theme tokens and replaces them with provided theme values.\n * @param {string} styles Tokenized styles to fix.\n */\nfunction detokenize(styles) {\n    if (styles) {\n        styles = resolveThemableArray(splitStyles(styles)).styleString;\n    }\n    return styles;\n}\nexports.detokenize = detokenize;\n/**\n * Resolves ThemingInstruction objects in an array and joins the result into a string.\n * @param {ThemableArray} splitStyleArray ThemableArray to resolve and join.\n */\nfunction resolveThemableArray(splitStyleArray) {\n    var theme = _themeState.theme;\n    var themable = false;\n    // Resolve the array of theming instructions to an array of strings.\n    // Then join the array to produce the final CSS string.\n    var resolvedArray = (splitStyleArray || []).map(function (currentValue) {\n        var themeSlot = currentValue.theme;\n        if (themeSlot) {\n            themable = true;\n            // A theming annotation. Resolve it.\n            var themedValue = theme ? theme[themeSlot] : undefined;\n            var defaultValue = currentValue.defaultValue || 'inherit';\n            // Warn to console if we hit an unthemed value even when themes are provided, but only if \"DEBUG\" is true.\n            // Allow the themedValue to be undefined to explicitly request the default value.\n            if (theme &&\n                !themedValue &&\n                console &&\n                !(themeSlot in theme) &&\n                typeof DEBUG !== 'undefined' &&\n                DEBUG) {\n                console.warn(\"Theming value not provided for \\\"\" + themeSlot + \"\\\". Falling back to \\\"\" + defaultValue + \"\\\".\");\n            }\n            return themedValue || defaultValue;\n        }\n        else {\n            // A non-themable string. Preserve it.\n            return currentValue.rawString;\n        }\n    });\n    return {\n        styleString: resolvedArray.join(''),\n        themable: themable\n    };\n}\n/**\n * Split tokenized CSS into an array of strings and theme specification objects\n * @param {string} styles Tokenized styles to split.\n */\nfunction splitStyles(styles) {\n    var result = [];\n    if (styles) {\n        var pos = 0; // Current position in styles.\n        var tokenMatch = void 0;\n        while ((tokenMatch = _themeTokenRegex.exec(styles))) {\n            var matchIndex = tokenMatch.index;\n            if (matchIndex > pos) {\n                result.push({\n                    rawString: styles.substring(pos, matchIndex)\n                });\n            }\n            result.push({\n                theme: tokenMatch[1],\n                defaultValue: tokenMatch[2] // May be undefined\n            });\n            // index of the first character after the current match\n            pos = _themeTokenRegex.lastIndex;\n        }\n        // Push the rest of the string after the last match.\n        result.push({\n            rawString: styles.substring(pos)\n        });\n    }\n    return result;\n}\nexports.splitStyles = splitStyles;\n/**\n * Registers a set of style text. If it is registered too early, we will register it when the\n * window.load event is fired.\n * @param {ThemableArray} styleArray Array of IThemingInstruction objects to register.\n * @param {IStyleRecord} styleRecord May specify a style Element to update.\n */\nfunction registerStyles(styleArray) {\n    if (typeof document === 'undefined') {\n        return;\n    }\n    var head = document.getElementsByTagName('head')[0];\n    var styleElement = document.createElement('style');\n    var _a = resolveThemableArray(styleArray), styleString = _a.styleString, themable = _a.themable;\n    styleElement.setAttribute('data-load-themed-styles', 'true');\n    if (_styleNonce) {\n        styleElement.setAttribute('nonce', _styleNonce);\n    }\n    styleElement.appendChild(document.createTextNode(styleString));\n    _themeState.perf.count++;\n    head.appendChild(styleElement);\n    var ev = document.createEvent('HTMLEvents');\n    ev.initEvent('styleinsert', true /* bubbleEvent */, false /* cancelable */);\n    ev.args = {\n        newStyle: styleElement\n    };\n    document.dispatchEvent(ev);\n    var record = {\n        styleElement: styleElement,\n        themableStyle: styleArray\n    };\n    if (themable) {\n        _themeState.registeredThemableStyles.push(record);\n    }\n    else {\n        _themeState.registeredStyles.push(record);\n    }\n}\n//# sourceMappingURL=index.js.map"
+        },
+        {
+          "id": "vlQI",
+          "identifier": "external \"@microsoft/sp-http\"",
+          "name": "external \"@microsoft/sp-http\"",
+          "index": 12,
+          "index2": 11,
+          "size": 42,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "issuerId": "KnG4",
+          "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony side effect evaluation",
+              "userRequest": "@microsoft/sp-http",
+              "loc": "20:0-50"
+            },
+            {
+              "moduleId": "KnG4",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+              "type": "harmony import specifier",
+              "userRequest": "@microsoft/sp-http",
+              "loc": "66:44-56"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": "yLpj",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\webpack\\buildin\\global.js",
+          "name": "(webpack)/buildin/global.js",
+          "index": 10,
+          "index2": 6,
+          "size": 472,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            "feedback-web-part"
+          ],
+          "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+          "issuerId": "ruv1",
+          "issuerName": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js",
+          "issuerPath": [
+            {
+              "id": "KnG4",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+            },
+            {
+              "id": "WUD2",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+            },
+            {
+              "id": "SmlZ",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+              "name": "./lib/webparts/feedback/FeedbackWebPart.module.css"
+            },
+            {
+              "id": "ruv1",
+              "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+              "name": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "assets": [],
+          "reasons": [
+            {
+              "moduleId": "ruv1",
+              "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+              "module": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js",
+              "moduleName": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js",
+              "type": "cjs require",
+              "userRequest": "global",
+              "loc": "1:0-56"
+            }
+          ],
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 4,
+          "source": "var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn this;\n})();\n\ntry {\n\t// This works if eval is allowed (see CSP)\n\tg = g || new Function(\"return this\")();\n} catch (e) {\n\t// This works if the window reference is available\n\tif (typeof window === \"object\") g = window;\n}\n\n// g can still be undefined, but nothing to do about it...\n// We return undefined, instead of nothing here, so it's\n// easier to handle this case. if(!global) { ...}\n\nmodule.exports = g;\n"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "feedback-web-part",
+          "request": "C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": "26ea",
+      "identifier": "external \"@microsoft/sp-property-pane\"",
+      "name": "external \"@microsoft/sp-property-pane\"",
+      "index": 2,
+      "index2": 1,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+      "issuerId": "KnG4",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-property-pane",
+          "loc": "15:0-68"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-property-pane",
+          "loc": "96:32-53"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": "I6O9",
+      "identifier": "external \"@microsoft/sp-loader\"",
+      "name": "external \"@microsoft/sp-loader\"",
+      "index": null,
+      "index2": null,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "id": "JPst",
+      "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\runtime\\api.js",
+      "name": "./node_modules/css-loader/dist/runtime/api.js",
+      "index": 8,
+      "index2": 4,
+      "size": 2677,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+      "issuerId": "qUP5",
+      "issuerName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        },
+        {
+          "id": "WUD2",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+        },
+        {
+          "id": "SmlZ",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.css"
+        },
+        {
+          "id": "qUP5",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "qUP5",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "module": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "moduleName": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "type": "cjs require",
+          "userRequest": "../../../node_modules/css-loader/dist/runtime/api.js",
+          "loc": "1:27-90"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 4,
+      "source": "\"use strict\";\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (useSourceMap) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item, useSourceMap);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \"{\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join('');\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery) {\n    if (typeof modules === 'string') {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, '']];\n    }\n\n    var alreadyImportedModules = {};\n\n    for (var i = 0; i < this.length; i++) {\n      // eslint-disable-next-line prefer-destructuring\n      var id = this[i][0];\n\n      if (id != null) {\n        alreadyImportedModules[id] = true;\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = modules[_i]; // skip already imported module\n      // this implementation is not 100% perfect for weird media query combinations\n      // when a module is imported multiple times with different media queries.\n      // I hope this will never occur (Hey this way we have smaller bundles)\n\n      if (item[0] == null || !alreadyImportedModules[item[0]]) {\n        if (mediaQuery && !item[2]) {\n          item[2] = mediaQuery;\n        } else if (mediaQuery) {\n          item[2] = \"(\".concat(item[2], \") and (\").concat(mediaQuery, \")\");\n        }\n\n        list.push(item);\n      }\n    }\n  };\n\n  return list;\n};\n\nfunction cssWithMappingToString(item, useSourceMap) {\n  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring\n\n  var cssMapping = item[3];\n\n  if (!cssMapping) {\n    return content;\n  }\n\n  if (useSourceMap && typeof btoa === 'function') {\n    var sourceMapping = toComment(cssMapping);\n    var sourceURLs = cssMapping.sources.map(function (source) {\n      return \"/*# sourceURL=\".concat(cssMapping.sourceRoot).concat(source, \" */\");\n    });\n    return [content].concat(sourceURLs).concat([sourceMapping]).join('\\n');\n  }\n\n  return [content].join('\\n');\n} // Adapted from convert-source-map (MIT)\n\n\nfunction toComment(sourceMap) {\n  // eslint-disable-next-line no-undef\n  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));\n  var data = \"sourceMappingURL=data:application/json;charset=utf-8;base64,\".concat(base64);\n  return \"/*# \".concat(data, \" */\");\n}"
+    },
+    {
+      "id": "KnG4",
+      "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+      "name": "./lib/webparts/feedback/FeedbackWebPart.js",
+      "index": 0,
+      "index2": 12,
+      "size": 5314,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": null,
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "type": "single entry",
+          "userRequest": "C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "loc": "feedback-web-part"
+        }
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { Version } from '@microsoft/sp-core-library';\r\nimport { PropertyPaneTextField } from '@microsoft/sp-property-pane';\r\nimport { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';\r\nimport { escape } from '@microsoft/sp-lodash-subset';\r\nimport styles from './FeedbackWebPart.module.scss';\r\nimport * as strings from 'FeedbackWebPartStrings';\r\nimport { SPHttpClient } from '@microsoft/sp-http';\r\nimport { Environment, EnvironmentType } from '@microsoft/sp-core-library';\r\nvar FeedbackWebPart = /** @class */ (function (_super) {\r\n    __extends(FeedbackWebPart, _super);\r\n    function FeedbackWebPart() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    FeedbackWebPart.prototype.render = function () {\r\n        debugger;\r\n        this.domElement.innerHTML = \"\\n    <div>\\n    <i class='ms-Icon ms-Icon--NoteForward' aria-hidden='true'></i>\\n    <input type='text' class='\" + styles.input + \"' maxlenght='255' placeholder='\" + escape(this.properties.hintText) + \"' />\\n    <button type='button' class='ms-Button'><span class='ms-Button-label'>Send</span></button>\\n    <p class='\" + styles.successIndicator + \"'></p>\\n  </div>\";\r\n        this.setComment = this.setComment.bind(this);\r\n        this.sendFeedback = this.sendFeedback.bind(this);\r\n        var textInput = this.domElement.getElementsByTagName(\"INPUT\")[0];\r\n        textInput.addEventListener(\"keyup\", this.setComment);\r\n        var button = this.domElement.getElementsByTagName(\"BUTTON\")[0];\r\n        button.onclick = this.sendFeedback;\r\n    };\r\n    FeedbackWebPart.prototype.setComment = function (event) {\r\n        debugger;\r\n        var srcElement = event.srcElement;\r\n        this._commentText = escape(srcElement.value);\r\n    };\r\n    FeedbackWebPart.prototype.sendFeedback = function () {\r\n        var _this = this;\r\n        debugger;\r\n        this.context.statusRenderer.clearError(this.domElement);\r\n        var paragraphElement = this.domElement.getElementsByClassName(styles.successIndicator)[0];\r\n        paragraphElement.innerHTML = \"\";\r\n        if (this._commentText === undefined || this._commentText.length === 0) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Please type in a comment or suggestion.\");\r\n            return;\r\n        }\r\n        if (Environment.type === EnvironmentType.Local) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Feedback can't be saved when running in local workbech.\");\r\n            return;\r\n        }\r\n        debugger;\r\n        var url = this.context.pageContext.site.absoluteUrl + \"/_api/web/lists/getbytitle('Feedback')/items\";\r\n        var item = {\r\n            \"Title\": this._commentText,\r\n            \"url\": window.location.href\r\n        };\r\n        var spHttpClientOptions = {\r\n            \"body\": JSON.stringify(item)\r\n        };\r\n        this.context.statusRenderer.displayLoadingIndicator(paragraphElement, \"- Sending feedback\");\r\n        this.context.spHttpClient.post(url, SPHttpClient.configurations.v1, spHttpClientOptions)\r\n            .then(function (response) {\r\n            _this.context.statusRenderer.clearLoadingIndicator(paragraphElement);\r\n            if (response.status === 201) {\r\n                _this.domElement.getElementsByClassName(styles.successIndicator)[0]\r\n                    .innerHTML = \"<i class='ms-Icon ms-Icon--Accept' aria-hidden='true'>&nbsp;Thank you for the feedback!</i>\";\r\n            }\r\n            else {\r\n                _this.context.statusRenderer.renderError(_this.domElement, \"Failed to save feedback. Error code: \" + response.statusText + \" (\" + response.status + \")\");\r\n            }\r\n        });\r\n    };\r\n    Object.defineProperty(FeedbackWebPart.prototype, \"dataVersion\", {\r\n        get: function () {\r\n            return Version.parse('1.0');\r\n        },\r\n        enumerable: false,\r\n        configurable: true\r\n    });\r\n    FeedbackWebPart.prototype.getPropertyPaneConfiguration = function () {\r\n        return {\r\n            pages: [\r\n                {\r\n                    header: {\r\n                        description: strings.PropertyPaneDescription\r\n                    },\r\n                    groups: [\r\n                        {\r\n                            groupName: strings.BasicGroupName,\r\n                            groupFields: [\r\n                                PropertyPaneTextField('description', {\r\n                                    label: strings.HintTextFieldLabel\r\n                                })\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        };\r\n    };\r\n    return FeedbackWebPart;\r\n}(BaseClientSideWebPart));\r\nexport default FeedbackWebPart;\r\n"
+    },
+    {
+      "id": "Pk8u",
+      "identifier": "external \"@microsoft/sp-lodash-subset\"",
+      "name": "external \"@microsoft/sp-lodash-subset\"",
+      "index": 4,
+      "index2": 3,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+      "issuerId": "KnG4",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-lodash-subset",
+          "loc": "17:0-53"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-lodash-subset",
+          "loc": "29:204-210"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-lodash-subset",
+          "loc": "40:28-34"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": "SmlZ",
+      "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+      "name": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+      "index": 6,
+      "index2": 8,
+      "size": 565,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+      "issuerId": "WUD2",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        },
+        {
+          "id": "WUD2",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "WUD2",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js",
+          "type": "cjs require",
+          "userRequest": "./FeedbackWebPart.module.css",
+          "loc": "2:0-39"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 2,
+      "source": "var content = require(\"!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src/index.js??postcss!./FeedbackWebPart.module.css\");\nvar loader = require(\"C:\\\\SharepointJS\\\\feedback-webpart\\\\node_modules\\\\@microsoft\\\\loader-load-themed-styles\\\\node_modules\\\\@microsoft\\\\load-themed-styles\\\\lib\\\\index.js\");\n\nif(typeof content === \"string\") content = [[module.id, content]];\n\n// add the styles to the DOM\nfor (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);\n\nif(content.locals) module.exports = content.locals;"
+    },
+    {
+      "id": "UWqr",
+      "identifier": "external \"@microsoft/sp-core-library\"",
+      "name": "external \"@microsoft/sp-core-library\"",
+      "index": 1,
+      "index2": 0,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+      "issuerId": "KnG4",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-core-library",
+          "loc": "14:0-53"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-core-library",
+          "loc": "21:0-74"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-core-library",
+          "loc": "52:12-23"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-core-library",
+          "loc": "52:33-48"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-core-library",
+          "loc": "80:19-26"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": "WUD2",
+      "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+      "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js",
+      "index": 5,
+      "index2": 9,
+      "size": 211,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+      "issuerId": "KnG4",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "./FeedbackWebPart.module.scss",
+          "loc": "18:0-51"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "./FeedbackWebPart.module.scss",
+          "loc": "29:153-159"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "./FeedbackWebPart.module.scss",
+          "loc": "29:360-366"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "./FeedbackWebPart.module.scss",
+          "loc": "46:70-76"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "./FeedbackWebPart.module.scss",
+          "loc": "70:56-62"
+        }
+      ],
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "/* tslint:disable */\r\nrequire(\"./FeedbackWebPart.module.css\");\r\nvar styles = {\r\n    input: 'input_513b35c0',\r\n    successIndicator: 'successIndicator_513b35c0'\r\n};\r\nexport default styles;\r\n/* tslint:enable */ \r\n"
+    },
+    {
+      "id": "br4S",
+      "identifier": "external \"@microsoft/sp-webpart-base\"",
+      "name": "external \"@microsoft/sp-webpart-base\"",
+      "index": 3,
+      "index2": 2,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+      "issuerId": "KnG4",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-webpart-base",
+          "loc": "16:0-67"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-webpart-base",
+          "loc": "107:2-23"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": "e9Hm",
+      "identifier": "external \"FeedbackWebPartStrings\"",
+      "name": "external \"FeedbackWebPartStrings\"",
+      "index": 11,
+      "index2": 10,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+      "issuerId": "KnG4",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "FeedbackWebPartStrings",
+          "loc": "19:0-50"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "FeedbackWebPartStrings",
+          "loc": "90:37-68"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "FeedbackWebPartStrings",
+          "loc": "94:39-61"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "FeedbackWebPartStrings",
+          "loc": "97:43-69"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": "qUP5",
+      "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+      "name": "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src??postcss!./lib/webparts/feedback/FeedbackWebPart.module.css",
+      "index": 7,
+      "index2": 5,
+      "size": 242,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+      "issuerId": "SmlZ",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        },
+        {
+          "id": "WUD2",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+        },
+        {
+          "id": "SmlZ",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.css"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "SmlZ",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "type": "cjs require",
+          "userRequest": "!!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src/index.js??postcss!./FeedbackWebPart.module.css",
+          "loc": "1:14-159"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 3,
+      "source": "exports = module.exports = require(\"../../../node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.id, \".input_513b35c0{border:1px solid grey;width:50%;margin:0 10px}.successIndicator_513b35c0{border:0}\", \"\"]);\n"
+    },
+    {
+      "id": "ruv1",
+      "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+      "name": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js",
+      "index": 9,
+      "index2": 7,
+      "size": 11360,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+      "issuerId": "SmlZ",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        },
+        {
+          "id": "WUD2",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+        },
+        {
+          "id": "SmlZ",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.css"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "SmlZ",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.module.css",
+          "type": "cjs require",
+          "userRequest": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+          "loc": "2:13-172"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 3,
+      "source": "\"use strict\";\n// Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.\n// See LICENSE in the project root for license information.\nvar __assign = (this && this.__assign) || function () {\n    __assign = Object.assign || function(t) {\n        for (var s, i = 1, n = arguments.length; i < n; i++) {\n            s = arguments[i];\n            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))\n                t[p] = s[p];\n        }\n        return t;\n    };\n    return __assign.apply(this, arguments);\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.splitStyles = exports.detokenize = exports.clearStyles = exports.loadTheme = exports.flush = exports.configureRunMode = exports.configureLoadStyles = exports.loadStyles = void 0;\n// Store the theming state in __themeState__ global scope for reuse in the case of duplicate\n// load-themed-styles hosted on the page.\nvar _root = typeof window === 'undefined' ? global : window; // eslint-disable-line @typescript-eslint/no-explicit-any\n// Nonce string to inject into script tag if one provided. This is used in CSP (Content Security Policy).\nvar _styleNonce = _root && _root.CSPSettings && _root.CSPSettings.nonce;\nvar _themeState = initializeThemeState();\n/**\n * Matches theming tokens. For example, \"[theme: themeSlotName, default: #FFF]\" (including the quotes).\n */\nvar _themeTokenRegex = /[\\'\\\"]\\[theme:\\s*(\\w+)\\s*(?:\\,\\s*default:\\s*([\\\\\"\\']?[\\.\\,\\(\\)\\#\\-\\s\\w]*[\\.\\,\\(\\)\\#\\-\\w][\\\"\\']?))?\\s*\\][\\'\\\"]/g;\nvar now = function () {\n    return typeof performance !== 'undefined' && !!performance.now ? performance.now() : Date.now();\n};\nfunction measure(func) {\n    var start = now();\n    func();\n    var end = now();\n    _themeState.perf.duration += end - start;\n}\n/**\n * initialize global state object\n */\nfunction initializeThemeState() {\n    var state = _root.__themeState__ || {\n        theme: undefined,\n        lastStyleElement: undefined,\n        registeredStyles: []\n    };\n    if (!state.runState) {\n        state = __assign(__assign({}, state), { perf: {\n                count: 0,\n                duration: 0\n            }, runState: {\n                flushTimer: 0,\n                mode: 0 /* sync */,\n                buffer: []\n            } });\n    }\n    if (!state.registeredThemableStyles) {\n        state = __assign(__assign({}, state), { registeredThemableStyles: [] });\n    }\n    _root.__themeState__ = state;\n    return state;\n}\n/**\n * Loads a set of style text. If it is registered too early, we will register it when the window.load\n * event is fired.\n * @param {string | ThemableArray} styles Themable style text to register.\n * @param {boolean} loadAsync When true, always load styles in async mode, irrespective of current sync mode.\n */\nfunction loadStyles(styles, loadAsync) {\n    if (loadAsync === void 0) { loadAsync = false; }\n    measure(function () {\n        var styleParts = Array.isArray(styles) ? styles : splitStyles(styles);\n        var _a = _themeState.runState, mode = _a.mode, buffer = _a.buffer, flushTimer = _a.flushTimer;\n        if (loadAsync || mode === 1 /* async */) {\n            buffer.push(styleParts);\n            if (!flushTimer) {\n                _themeState.runState.flushTimer = asyncLoadStyles();\n            }\n        }\n        else {\n            applyThemableStyles(styleParts);\n        }\n    });\n}\nexports.loadStyles = loadStyles;\n/**\n * Allows for customizable loadStyles logic. e.g. for server side rendering application\n * @param {(processedStyles: string, rawStyles?: string | ThemableArray) => void}\n * a loadStyles callback that gets called when styles are loaded or reloaded\n */\nfunction configureLoadStyles(loadStylesFn) {\n    _themeState.loadStyles = loadStylesFn;\n}\nexports.configureLoadStyles = configureLoadStyles;\n/**\n * Configure run mode of load-themable-styles\n * @param mode load-themable-styles run mode, async or sync\n */\nfunction configureRunMode(mode) {\n    _themeState.runState.mode = mode;\n}\nexports.configureRunMode = configureRunMode;\n/**\n * external code can call flush to synchronously force processing of currently buffered styles\n */\nfunction flush() {\n    measure(function () {\n        var styleArrays = _themeState.runState.buffer.slice();\n        _themeState.runState.buffer = [];\n        var mergedStyleArray = [].concat.apply([], styleArrays);\n        if (mergedStyleArray.length > 0) {\n            applyThemableStyles(mergedStyleArray);\n        }\n    });\n}\nexports.flush = flush;\n/**\n * register async loadStyles\n */\nfunction asyncLoadStyles() {\n    return setTimeout(function () {\n        _themeState.runState.flushTimer = 0;\n        flush();\n    }, 0);\n}\n/**\n * Loads a set of style text. If it is registered too early, we will register it when the window.load event\n * is fired.\n * @param {string} styleText Style to register.\n * @param {IStyleRecord} styleRecord Existing style record to re-apply.\n */\nfunction applyThemableStyles(stylesArray, styleRecord) {\n    if (_themeState.loadStyles) {\n        _themeState.loadStyles(resolveThemableArray(stylesArray).styleString, stylesArray);\n    }\n    else {\n        registerStyles(stylesArray);\n    }\n}\n/**\n * Registers a set theme tokens to find and replace. If styles were already registered, they will be\n * replaced.\n * @param {theme} theme JSON object of theme tokens to values.\n */\nfunction loadTheme(theme) {\n    _themeState.theme = theme;\n    // reload styles.\n    reloadStyles();\n}\nexports.loadTheme = loadTheme;\n/**\n * Clear already registered style elements and style records in theme_State object\n * @param option - specify which group of registered styles should be cleared.\n * Default to be both themable and non-themable styles will be cleared\n */\nfunction clearStyles(option) {\n    if (option === void 0) { option = 3 /* all */; }\n    if (option === 3 /* all */ || option === 2 /* onlyNonThemable */) {\n        clearStylesInternal(_themeState.registeredStyles);\n        _themeState.registeredStyles = [];\n    }\n    if (option === 3 /* all */ || option === 1 /* onlyThemable */) {\n        clearStylesInternal(_themeState.registeredThemableStyles);\n        _themeState.registeredThemableStyles = [];\n    }\n}\nexports.clearStyles = clearStyles;\nfunction clearStylesInternal(records) {\n    records.forEach(function (styleRecord) {\n        var styleElement = styleRecord && styleRecord.styleElement;\n        if (styleElement && styleElement.parentElement) {\n            styleElement.parentElement.removeChild(styleElement);\n        }\n    });\n}\n/**\n * Reloads styles.\n */\nfunction reloadStyles() {\n    if (_themeState.theme) {\n        var themableStyles = [];\n        for (var _i = 0, _a = _themeState.registeredThemableStyles; _i < _a.length; _i++) {\n            var styleRecord = _a[_i];\n            themableStyles.push(styleRecord.themableStyle);\n        }\n        if (themableStyles.length > 0) {\n            clearStyles(1 /* onlyThemable */);\n            applyThemableStyles([].concat.apply([], themableStyles));\n        }\n    }\n}\n/**\n * Find theme tokens and replaces them with provided theme values.\n * @param {string} styles Tokenized styles to fix.\n */\nfunction detokenize(styles) {\n    if (styles) {\n        styles = resolveThemableArray(splitStyles(styles)).styleString;\n    }\n    return styles;\n}\nexports.detokenize = detokenize;\n/**\n * Resolves ThemingInstruction objects in an array and joins the result into a string.\n * @param {ThemableArray} splitStyleArray ThemableArray to resolve and join.\n */\nfunction resolveThemableArray(splitStyleArray) {\n    var theme = _themeState.theme;\n    var themable = false;\n    // Resolve the array of theming instructions to an array of strings.\n    // Then join the array to produce the final CSS string.\n    var resolvedArray = (splitStyleArray || []).map(function (currentValue) {\n        var themeSlot = currentValue.theme;\n        if (themeSlot) {\n            themable = true;\n            // A theming annotation. Resolve it.\n            var themedValue = theme ? theme[themeSlot] : undefined;\n            var defaultValue = currentValue.defaultValue || 'inherit';\n            // Warn to console if we hit an unthemed value even when themes are provided, but only if \"DEBUG\" is true.\n            // Allow the themedValue to be undefined to explicitly request the default value.\n            if (theme &&\n                !themedValue &&\n                console &&\n                !(themeSlot in theme) &&\n                typeof DEBUG !== 'undefined' &&\n                DEBUG) {\n                console.warn(\"Theming value not provided for \\\"\" + themeSlot + \"\\\". Falling back to \\\"\" + defaultValue + \"\\\".\");\n            }\n            return themedValue || defaultValue;\n        }\n        else {\n            // A non-themable string. Preserve it.\n            return currentValue.rawString;\n        }\n    });\n    return {\n        styleString: resolvedArray.join(''),\n        themable: themable\n    };\n}\n/**\n * Split tokenized CSS into an array of strings and theme specification objects\n * @param {string} styles Tokenized styles to split.\n */\nfunction splitStyles(styles) {\n    var result = [];\n    if (styles) {\n        var pos = 0; // Current position in styles.\n        var tokenMatch = void 0;\n        while ((tokenMatch = _themeTokenRegex.exec(styles))) {\n            var matchIndex = tokenMatch.index;\n            if (matchIndex > pos) {\n                result.push({\n                    rawString: styles.substring(pos, matchIndex)\n                });\n            }\n            result.push({\n                theme: tokenMatch[1],\n                defaultValue: tokenMatch[2] // May be undefined\n            });\n            // index of the first character after the current match\n            pos = _themeTokenRegex.lastIndex;\n        }\n        // Push the rest of the string after the last match.\n        result.push({\n            rawString: styles.substring(pos)\n        });\n    }\n    return result;\n}\nexports.splitStyles = splitStyles;\n/**\n * Registers a set of style text. If it is registered too early, we will register it when the\n * window.load event is fired.\n * @param {ThemableArray} styleArray Array of IThemingInstruction objects to register.\n * @param {IStyleRecord} styleRecord May specify a style Element to update.\n */\nfunction registerStyles(styleArray) {\n    if (typeof document === 'undefined') {\n        return;\n    }\n    var head = document.getElementsByTagName('head')[0];\n    var styleElement = document.createElement('style');\n    var _a = resolveThemableArray(styleArray), styleString = _a.styleString, themable = _a.themable;\n    styleElement.setAttribute('data-load-themed-styles', 'true');\n    if (_styleNonce) {\n        styleElement.setAttribute('nonce', _styleNonce);\n    }\n    styleElement.appendChild(document.createTextNode(styleString));\n    _themeState.perf.count++;\n    head.appendChild(styleElement);\n    var ev = document.createEvent('HTMLEvents');\n    ev.initEvent('styleinsert', true /* bubbleEvent */, false /* cancelable */);\n    ev.args = {\n        newStyle: styleElement\n    };\n    document.dispatchEvent(ev);\n    var record = {\n        styleElement: styleElement,\n        themableStyle: styleArray\n    };\n    if (themable) {\n        _themeState.registeredThemableStyles.push(record);\n    }\n    else {\n        _themeState.registeredStyles.push(record);\n    }\n}\n//# sourceMappingURL=index.js.map"
+    },
+    {
+      "id": "vlQI",
+      "identifier": "external \"@microsoft/sp-http\"",
+      "name": "external \"@microsoft/sp-http\"",
+      "index": 12,
+      "index2": 11,
+      "size": 42,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+      "issuerId": "KnG4",
+      "issuerName": "./lib/webparts/feedback/FeedbackWebPart.js",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony side effect evaluation",
+          "userRequest": "@microsoft/sp-http",
+          "loc": "20:0-50"
+        },
+        {
+          "moduleId": "KnG4",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "module": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
+          "type": "harmony import specifier",
+          "userRequest": "@microsoft/sp-http",
+          "loc": "66:44-56"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": "yLpj",
+      "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\webpack\\buildin\\global.js",
+      "name": "(webpack)/buildin/global.js",
+      "index": 10,
+      "index2": 6,
+      "size": 472,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        "feedback-web-part"
+      ],
+      "issuer": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+      "issuerId": "ruv1",
+      "issuerName": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js",
+      "issuerPath": [
+        {
+          "id": "KnG4",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.js"
+        },
+        {
+          "id": "WUD2",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\source-map-loader\\index.js!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.scss.js",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.scss.js"
+        },
+        {
+          "id": "SmlZ",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\lib\\index.js??ref--4-0!C:\\SharepointJS\\feedback-webpart\\node_modules\\css-loader\\dist\\cjs.js!C:\\SharepointJS\\feedback-webpart\\node_modules\\postcss-loader\\src\\index.js??postcss!C:\\SharepointJS\\feedback-webpart\\lib\\webparts\\feedback\\FeedbackWebPart.module.css",
+          "name": "./lib/webparts/feedback/FeedbackWebPart.module.css"
+        },
+        {
+          "id": "ruv1",
+          "identifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+          "name": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "assets": [],
+      "reasons": [
+        {
+          "moduleId": "ruv1",
+          "moduleIdentifier": "C:\\SharepointJS\\feedback-webpart\\node_modules\\@microsoft\\loader-load-themed-styles\\node_modules\\@microsoft\\load-themed-styles\\lib\\index.js",
+          "module": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js",
+          "moduleName": "./node_modules/@microsoft/loader-load-themed-styles/node_modules/@microsoft/load-themed-styles/lib/index.js",
+          "type": "cjs require",
+          "userRequest": "global",
+          "loc": "1:0-56"
+        }
+      ],
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 4,
+      "source": "var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn this;\n})();\n\ntry {\n\t// This works if eval is allowed (see CSP)\n\tg = g || new Function(\"return this\")();\n} catch (e) {\n\t// This works if the window reference is available\n\tif (typeof window === \"object\") g = window;\n}\n\n// g can still be undefined, but nothing to do about it...\n// We return undefined, instead of nothing here, so it's\n// easier to handle this case. if(!global) { ...}\n\nmodule.exports = g;\n"
+    }
+  ],
+  "filteredModules": 0,
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": []
+}
