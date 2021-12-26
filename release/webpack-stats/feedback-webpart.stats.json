@@ -2,9 +2,9 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "15d289e163e8e10fded2",
-  "time": 3923,
-  "builtAt": 1640521318879,
+  "hash": "8adb6a4e4066a46cc53c",
+  "time": 4853,
+  "builtAt": 1640530985445,
   "publicPath": "",
   "outputPath": "C:\\SharepointJS\\feedback-webpart\\dist",
   "assetsByChunkName": {
@@ -32,7 +32,7 @@
     },
     {
       "name": "feedback-web-part.js",
-      "size": 32096,
+      "size": 32225,
       "chunks": [
         "feedback-web-part"
       ],
@@ -44,7 +44,7 @@
     },
     {
       "name": "feedback-web-part.js.map",
-      "size": 30916,
+      "size": 31263,
       "chunks": [
         "feedback-web-part"
       ],
@@ -90,7 +90,7 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 21093,
+      "size": 21222,
       "names": [
         "feedback-web-part"
       ],
@@ -98,7 +98,7 @@
         "feedback-web-part.js",
         "feedback-web-part.js.map"
       ],
-      "hash": "84ca4acf94d8c9f9215a",
+      "hash": "3e7cfd14eb06966e487b",
       "siblings": [],
       "parents": [],
       "children": [],
@@ -148,7 +148,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-property-pane",
-              "loc": "96:32-53"
+              "loc": "97:32-53"
             }
           ],
           "providedExports": null,
@@ -220,7 +220,7 @@
           "name": "./lib/webparts/feedback/FeedbackWebPart.js",
           "index": 0,
           "index2": 12,
-          "size": 5314,
+          "size": 5443,
           "cacheable": true,
           "built": true,
           "optional": false,
@@ -252,7 +252,7 @@
           ],
           "optimizationBailout": [],
           "depth": 0,
-          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { Version } from '@microsoft/sp-core-library';\r\nimport { PropertyPaneTextField } from '@microsoft/sp-property-pane';\r\nimport { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';\r\nimport { escape } from '@microsoft/sp-lodash-subset';\r\nimport styles from './FeedbackWebPart.module.scss';\r\nimport * as strings from 'FeedbackWebPartStrings';\r\nimport { SPHttpClient } from '@microsoft/sp-http';\r\nimport { Environment, EnvironmentType } from '@microsoft/sp-core-library';\r\nvar FeedbackWebPart = /** @class */ (function (_super) {\r\n    __extends(FeedbackWebPart, _super);\r\n    function FeedbackWebPart() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    FeedbackWebPart.prototype.render = function () {\r\n        debugger;\r\n        this.domElement.innerHTML = \"\\n    <div>\\n    <i class='ms-Icon ms-Icon--NoteForward' aria-hidden='true'></i>\\n    <input type='text' class='\" + styles.input + \"' maxlenght='255' placeholder='\" + escape(this.properties.hintText) + \"' />\\n    <button type='button' class='ms-Button'><span class='ms-Button-label'>Send</span></button>\\n    <p class='\" + styles.successIndicator + \"'></p>\\n  </div>\";\r\n        this.setComment = this.setComment.bind(this);\r\n        this.sendFeedback = this.sendFeedback.bind(this);\r\n        var textInput = this.domElement.getElementsByTagName(\"INPUT\")[0];\r\n        textInput.addEventListener(\"keyup\", this.setComment);\r\n        var button = this.domElement.getElementsByTagName(\"BUTTON\")[0];\r\n        button.onclick = this.sendFeedback;\r\n    };\r\n    FeedbackWebPart.prototype.setComment = function (event) {\r\n        debugger;\r\n        var srcElement = event.srcElement;\r\n        this._commentText = escape(srcElement.value);\r\n    };\r\n    FeedbackWebPart.prototype.sendFeedback = function () {\r\n        var _this = this;\r\n        debugger;\r\n        this.context.statusRenderer.clearError(this.domElement);\r\n        var paragraphElement = this.domElement.getElementsByClassName(styles.successIndicator)[0];\r\n        paragraphElement.innerHTML = \"\";\r\n        if (this._commentText === undefined || this._commentText.length === 0) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Please type in a comment or suggestion.\");\r\n            return;\r\n        }\r\n        if (Environment.type === EnvironmentType.Local) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Feedback can't be saved when running in local workbech.\");\r\n            return;\r\n        }\r\n        debugger;\r\n        var url = this.context.pageContext.site.absoluteUrl + \"/_api/web/lists/getbytitle('Feedback')/items\";\r\n        var item = {\r\n            \"Title\": this._commentText,\r\n            \"url\": window.location.href\r\n        };\r\n        var spHttpClientOptions = {\r\n            \"body\": JSON.stringify(item)\r\n        };\r\n        this.context.statusRenderer.displayLoadingIndicator(paragraphElement, \"- Sending feedback\");\r\n        this.context.spHttpClient.post(url, SPHttpClient.configurations.v1, spHttpClientOptions)\r\n            .then(function (response) {\r\n            _this.context.statusRenderer.clearLoadingIndicator(paragraphElement);\r\n            if (response.status === 201) {\r\n                _this.domElement.getElementsByClassName(styles.successIndicator)[0]\r\n                    .innerHTML = \"<i class='ms-Icon ms-Icon--Accept' aria-hidden='true'>&nbsp;Thank you for the feedback!</i>\";\r\n            }\r\n            else {\r\n                _this.context.statusRenderer.renderError(_this.domElement, \"Failed to save feedback. Error code: \" + response.statusText + \" (\" + response.status + \")\");\r\n            }\r\n        });\r\n    };\r\n    Object.defineProperty(FeedbackWebPart.prototype, \"dataVersion\", {\r\n        get: function () {\r\n            return Version.parse('1.0');\r\n        },\r\n        enumerable: false,\r\n        configurable: true\r\n    });\r\n    FeedbackWebPart.prototype.getPropertyPaneConfiguration = function () {\r\n        return {\r\n            pages: [\r\n                {\r\n                    header: {\r\n                        description: strings.PropertyPaneDescription\r\n                    },\r\n                    groups: [\r\n                        {\r\n                            groupName: strings.BasicGroupName,\r\n                            groupFields: [\r\n                                PropertyPaneTextField('description', {\r\n                                    label: strings.HintTextFieldLabel\r\n                                })\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        };\r\n    };\r\n    return FeedbackWebPart;\r\n}(BaseClientSideWebPart));\r\nexport default FeedbackWebPart;\r\n"
+          "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { Version } from '@microsoft/sp-core-library';\r\nimport { PropertyPaneTextField } from '@microsoft/sp-property-pane';\r\nimport { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';\r\nimport { escape } from '@microsoft/sp-lodash-subset';\r\nimport styles from './FeedbackWebPart.module.scss';\r\nimport * as strings from 'FeedbackWebPartStrings';\r\nimport { SPHttpClient } from '@microsoft/sp-http';\r\nimport { Environment, EnvironmentType } from '@microsoft/sp-core-library';\r\nvar FeedbackWebPart = /** @class */ (function (_super) {\r\n    __extends(FeedbackWebPart, _super);\r\n    function FeedbackWebPart() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    FeedbackWebPart.prototype.render = function () {\r\n        debugger;\r\n        this.domElement.innerHTML = \"\\n    <div>\\n    <i class='ms-Icon ms-Icon--NoteForward' aria-hidden='true'></i>\\n    <input type='text' class='\" + styles.input + \"' maxlenght='255' placeholder='\" + escape(this.properties.hintText) + \"' />\\n    <button type='button' class='ms-Button'><span class='ms-Button-label'>Send</span></button>\\n    <p class='\" + styles.successIndicator + \"'></p>\\n  </div>\";\r\n        this.setComment = this.setComment.bind(this);\r\n        this.sendFeedback = this.sendFeedback.bind(this);\r\n        var textInput = this.domElement.getElementsByTagName(\"INPUT\")[0];\r\n        textInput.addEventListener(\"keyup\", this.setComment);\r\n        var button = this.domElement.getElementsByTagName(\"BUTTON\")[0];\r\n        button.onclick = this.sendFeedback;\r\n        button.disabled = true;\r\n    };\r\n    FeedbackWebPart.prototype.setComment = function (event) {\r\n        debugger;\r\n        var srcElement = event.srcElement;\r\n        this._commentText = escape(srcElement.value);\r\n        var button = this.domElement.getElementsByTagName(\"BUTTON\")[0];\r\n        button.disabled = (this._commentText.length === 0);\r\n    };\r\n    FeedbackWebPart.prototype.sendFeedback = function () {\r\n        var _this = this;\r\n        this.context.statusRenderer.clearError(this.domElement);\r\n        var paragraphElement = this.domElement.getElementsByClassName(styles.successIndicator)[0];\r\n        paragraphElement.innerHTML = \"\";\r\n        if (this._commentText === undefined || this._commentText.length === 0) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Please type in a comment or suggestion.\");\r\n            return;\r\n        }\r\n        if (Environment.type === EnvironmentType.Local) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Feedback can't be saved when running in local workbech.\");\r\n            return;\r\n        }\r\n        var url = this.context.pageContext.site.absoluteUrl + \"/_api/web/lists/getbytitle('Feedback')/items\";\r\n        var item = {\r\n            \"Title\": this._commentText,\r\n            \"url\": window.location.href\r\n        };\r\n        var spHttpClientOptions = {\r\n            \"body\": JSON.stringify(item)\r\n        };\r\n        this.context.statusRenderer.displayLoadingIndicator(paragraphElement, \"- Sending feedback\");\r\n        this.context.spHttpClient.post(url, SPHttpClient.configurations.v1, spHttpClientOptions)\r\n            .then(function (response) {\r\n            _this.context.statusRenderer.clearLoadingIndicator(paragraphElement);\r\n            if (response.status === 201) {\r\n                _this.domElement.getElementsByClassName(styles.successIndicator)[0]\r\n                    .innerHTML = \"<i class='ms-Icon ms-Icon--Accept' aria-hidden='true'>&nbsp;Thank you for the feedback!</i>\";\r\n            }\r\n            else {\r\n                _this.context.statusRenderer.renderError(_this.domElement, \"Failed to save feedback. Error code: \" + response.statusText + \" (\" + response.status + \")\");\r\n            }\r\n        });\r\n    };\r\n    Object.defineProperty(FeedbackWebPart.prototype, \"dataVersion\", {\r\n        get: function () {\r\n            return Version.parse('1.0');\r\n        },\r\n        enumerable: false,\r\n        configurable: true\r\n    });\r\n    FeedbackWebPart.prototype.getPropertyPaneConfiguration = function () {\r\n        return {\r\n            pages: [\r\n                {\r\n                    header: {\r\n                        description: strings.PropertyPaneDescription\r\n                    },\r\n                    groups: [\r\n                        {\r\n                            groupName: strings.BasicGroupName,\r\n                            groupFields: [\r\n                                PropertyPaneTextField('description', {\r\n                                    label: strings.HintTextFieldLabel\r\n                                })\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        };\r\n    };\r\n    return FeedbackWebPart;\r\n}(BaseClientSideWebPart));\r\nexport default FeedbackWebPart;\r\n"
         },
         {
           "id": "Pk8u",
@@ -307,7 +307,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-lodash-subset",
-              "loc": "40:28-34"
+              "loc": "41:28-34"
             }
           ],
           "providedExports": null,
@@ -416,7 +416,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-core-library",
-              "loc": "52:12-23"
+              "loc": "54:12-23"
             },
             {
               "moduleId": "KnG4",
@@ -425,7 +425,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-core-library",
-              "loc": "52:33-48"
+              "loc": "54:33-48"
             },
             {
               "moduleId": "KnG4",
@@ -434,7 +434,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-core-library",
-              "loc": "80:19-26"
+              "loc": "81:19-26"
             }
           ],
           "providedExports": null,
@@ -504,7 +504,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "./FeedbackWebPart.module.scss",
-              "loc": "46:70-76"
+              "loc": "48:70-76"
             },
             {
               "moduleId": "KnG4",
@@ -513,7 +513,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "./FeedbackWebPart.module.scss",
-              "loc": "70:56-62"
+              "loc": "71:56-62"
             }
           ],
           "providedExports": [
@@ -567,7 +567,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-webpart-base",
-              "loc": "107:2-23"
+              "loc": "108:2-23"
             }
           ],
           "providedExports": null,
@@ -618,7 +618,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "FeedbackWebPartStrings",
-              "loc": "90:37-68"
+              "loc": "91:37-68"
             },
             {
               "moduleId": "KnG4",
@@ -627,7 +627,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "FeedbackWebPartStrings",
-              "loc": "94:39-61"
+              "loc": "95:39-61"
             },
             {
               "moduleId": "KnG4",
@@ -636,7 +636,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "FeedbackWebPartStrings",
-              "loc": "97:43-69"
+              "loc": "98:43-69"
             }
           ],
           "providedExports": null,
@@ -795,7 +795,7 @@
               "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
               "type": "harmony import specifier",
               "userRequest": "@microsoft/sp-http",
-              "loc": "66:44-56"
+              "loc": "67:44-56"
             }
           ],
           "providedExports": null,
@@ -920,7 +920,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-property-pane",
-          "loc": "96:32-53"
+          "loc": "97:32-53"
         }
       ],
       "providedExports": null,
@@ -1016,7 +1016,7 @@
       "name": "./lib/webparts/feedback/FeedbackWebPart.js",
       "index": 0,
       "index2": 12,
-      "size": 5314,
+      "size": 5443,
       "cacheable": true,
       "built": true,
       "optional": false,
@@ -1048,7 +1048,7 @@
       ],
       "optimizationBailout": [],
       "depth": 0,
-      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { Version } from '@microsoft/sp-core-library';\r\nimport { PropertyPaneTextField } from '@microsoft/sp-property-pane';\r\nimport { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';\r\nimport { escape } from '@microsoft/sp-lodash-subset';\r\nimport styles from './FeedbackWebPart.module.scss';\r\nimport * as strings from 'FeedbackWebPartStrings';\r\nimport { SPHttpClient } from '@microsoft/sp-http';\r\nimport { Environment, EnvironmentType } from '@microsoft/sp-core-library';\r\nvar FeedbackWebPart = /** @class */ (function (_super) {\r\n    __extends(FeedbackWebPart, _super);\r\n    function FeedbackWebPart() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    FeedbackWebPart.prototype.render = function () {\r\n        debugger;\r\n        this.domElement.innerHTML = \"\\n    <div>\\n    <i class='ms-Icon ms-Icon--NoteForward' aria-hidden='true'></i>\\n    <input type='text' class='\" + styles.input + \"' maxlenght='255' placeholder='\" + escape(this.properties.hintText) + \"' />\\n    <button type='button' class='ms-Button'><span class='ms-Button-label'>Send</span></button>\\n    <p class='\" + styles.successIndicator + \"'></p>\\n  </div>\";\r\n        this.setComment = this.setComment.bind(this);\r\n        this.sendFeedback = this.sendFeedback.bind(this);\r\n        var textInput = this.domElement.getElementsByTagName(\"INPUT\")[0];\r\n        textInput.addEventListener(\"keyup\", this.setComment);\r\n        var button = this.domElement.getElementsByTagName(\"BUTTON\")[0];\r\n        button.onclick = this.sendFeedback;\r\n    };\r\n    FeedbackWebPart.prototype.setComment = function (event) {\r\n        debugger;\r\n        var srcElement = event.srcElement;\r\n        this._commentText = escape(srcElement.value);\r\n    };\r\n    FeedbackWebPart.prototype.sendFeedback = function () {\r\n        var _this = this;\r\n        debugger;\r\n        this.context.statusRenderer.clearError(this.domElement);\r\n        var paragraphElement = this.domElement.getElementsByClassName(styles.successIndicator)[0];\r\n        paragraphElement.innerHTML = \"\";\r\n        if (this._commentText === undefined || this._commentText.length === 0) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Please type in a comment or suggestion.\");\r\n            return;\r\n        }\r\n        if (Environment.type === EnvironmentType.Local) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Feedback can't be saved when running in local workbech.\");\r\n            return;\r\n        }\r\n        debugger;\r\n        var url = this.context.pageContext.site.absoluteUrl + \"/_api/web/lists/getbytitle('Feedback')/items\";\r\n        var item = {\r\n            \"Title\": this._commentText,\r\n            \"url\": window.location.href\r\n        };\r\n        var spHttpClientOptions = {\r\n            \"body\": JSON.stringify(item)\r\n        };\r\n        this.context.statusRenderer.displayLoadingIndicator(paragraphElement, \"- Sending feedback\");\r\n        this.context.spHttpClient.post(url, SPHttpClient.configurations.v1, spHttpClientOptions)\r\n            .then(function (response) {\r\n            _this.context.statusRenderer.clearLoadingIndicator(paragraphElement);\r\n            if (response.status === 201) {\r\n                _this.domElement.getElementsByClassName(styles.successIndicator)[0]\r\n                    .innerHTML = \"<i class='ms-Icon ms-Icon--Accept' aria-hidden='true'>&nbsp;Thank you for the feedback!</i>\";\r\n            }\r\n            else {\r\n                _this.context.statusRenderer.renderError(_this.domElement, \"Failed to save feedback. Error code: \" + response.statusText + \" (\" + response.status + \")\");\r\n            }\r\n        });\r\n    };\r\n    Object.defineProperty(FeedbackWebPart.prototype, \"dataVersion\", {\r\n        get: function () {\r\n            return Version.parse('1.0');\r\n        },\r\n        enumerable: false,\r\n        configurable: true\r\n    });\r\n    FeedbackWebPart.prototype.getPropertyPaneConfiguration = function () {\r\n        return {\r\n            pages: [\r\n                {\r\n                    header: {\r\n                        description: strings.PropertyPaneDescription\r\n                    },\r\n                    groups: [\r\n                        {\r\n                            groupName: strings.BasicGroupName,\r\n                            groupFields: [\r\n                                PropertyPaneTextField('description', {\r\n                                    label: strings.HintTextFieldLabel\r\n                                })\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        };\r\n    };\r\n    return FeedbackWebPart;\r\n}(BaseClientSideWebPart));\r\nexport default FeedbackWebPart;\r\n"
+      "source": "var __extends = (this && this.__extends) || (function () {\r\n    var extendStatics = function (d, b) {\r\n        extendStatics = Object.setPrototypeOf ||\r\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\r\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\r\n        return extendStatics(d, b);\r\n    };\r\n    return function (d, b) {\r\n        extendStatics(d, b);\r\n        function __() { this.constructor = d; }\r\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\r\n    };\r\n})();\r\nimport { Version } from '@microsoft/sp-core-library';\r\nimport { PropertyPaneTextField } from '@microsoft/sp-property-pane';\r\nimport { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';\r\nimport { escape } from '@microsoft/sp-lodash-subset';\r\nimport styles from './FeedbackWebPart.module.scss';\r\nimport * as strings from 'FeedbackWebPartStrings';\r\nimport { SPHttpClient } from '@microsoft/sp-http';\r\nimport { Environment, EnvironmentType } from '@microsoft/sp-core-library';\r\nvar FeedbackWebPart = /** @class */ (function (_super) {\r\n    __extends(FeedbackWebPart, _super);\r\n    function FeedbackWebPart() {\r\n        return _super !== null && _super.apply(this, arguments) || this;\r\n    }\r\n    FeedbackWebPart.prototype.render = function () {\r\n        debugger;\r\n        this.domElement.innerHTML = \"\\n    <div>\\n    <i class='ms-Icon ms-Icon--NoteForward' aria-hidden='true'></i>\\n    <input type='text' class='\" + styles.input + \"' maxlenght='255' placeholder='\" + escape(this.properties.hintText) + \"' />\\n    <button type='button' class='ms-Button'><span class='ms-Button-label'>Send</span></button>\\n    <p class='\" + styles.successIndicator + \"'></p>\\n  </div>\";\r\n        this.setComment = this.setComment.bind(this);\r\n        this.sendFeedback = this.sendFeedback.bind(this);\r\n        var textInput = this.domElement.getElementsByTagName(\"INPUT\")[0];\r\n        textInput.addEventListener(\"keyup\", this.setComment);\r\n        var button = this.domElement.getElementsByTagName(\"BUTTON\")[0];\r\n        button.onclick = this.sendFeedback;\r\n        button.disabled = true;\r\n    };\r\n    FeedbackWebPart.prototype.setComment = function (event) {\r\n        debugger;\r\n        var srcElement = event.srcElement;\r\n        this._commentText = escape(srcElement.value);\r\n        var button = this.domElement.getElementsByTagName(\"BUTTON\")[0];\r\n        button.disabled = (this._commentText.length === 0);\r\n    };\r\n    FeedbackWebPart.prototype.sendFeedback = function () {\r\n        var _this = this;\r\n        this.context.statusRenderer.clearError(this.domElement);\r\n        var paragraphElement = this.domElement.getElementsByClassName(styles.successIndicator)[0];\r\n        paragraphElement.innerHTML = \"\";\r\n        if (this._commentText === undefined || this._commentText.length === 0) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Please type in a comment or suggestion.\");\r\n            return;\r\n        }\r\n        if (Environment.type === EnvironmentType.Local) {\r\n            this.context.statusRenderer.renderError(this.domElement, \"Feedback can't be saved when running in local workbech.\");\r\n            return;\r\n        }\r\n        var url = this.context.pageContext.site.absoluteUrl + \"/_api/web/lists/getbytitle('Feedback')/items\";\r\n        var item = {\r\n            \"Title\": this._commentText,\r\n            \"url\": window.location.href\r\n        };\r\n        var spHttpClientOptions = {\r\n            \"body\": JSON.stringify(item)\r\n        };\r\n        this.context.statusRenderer.displayLoadingIndicator(paragraphElement, \"- Sending feedback\");\r\n        this.context.spHttpClient.post(url, SPHttpClient.configurations.v1, spHttpClientOptions)\r\n            .then(function (response) {\r\n            _this.context.statusRenderer.clearLoadingIndicator(paragraphElement);\r\n            if (response.status === 201) {\r\n                _this.domElement.getElementsByClassName(styles.successIndicator)[0]\r\n                    .innerHTML = \"<i class='ms-Icon ms-Icon--Accept' aria-hidden='true'>&nbsp;Thank you for the feedback!</i>\";\r\n            }\r\n            else {\r\n                _this.context.statusRenderer.renderError(_this.domElement, \"Failed to save feedback. Error code: \" + response.statusText + \" (\" + response.status + \")\");\r\n            }\r\n        });\r\n    };\r\n    Object.defineProperty(FeedbackWebPart.prototype, \"dataVersion\", {\r\n        get: function () {\r\n            return Version.parse('1.0');\r\n        },\r\n        enumerable: false,\r\n        configurable: true\r\n    });\r\n    FeedbackWebPart.prototype.getPropertyPaneConfiguration = function () {\r\n        return {\r\n            pages: [\r\n                {\r\n                    header: {\r\n                        description: strings.PropertyPaneDescription\r\n                    },\r\n                    groups: [\r\n                        {\r\n                            groupName: strings.BasicGroupName,\r\n                            groupFields: [\r\n                                PropertyPaneTextField('description', {\r\n                                    label: strings.HintTextFieldLabel\r\n                                })\r\n                            ]\r\n                        }\r\n                    ]\r\n                }\r\n            ]\r\n        };\r\n    };\r\n    return FeedbackWebPart;\r\n}(BaseClientSideWebPart));\r\nexport default FeedbackWebPart;\r\n"
     },
     {
       "id": "Pk8u",
@@ -1103,7 +1103,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-lodash-subset",
-          "loc": "40:28-34"
+          "loc": "41:28-34"
         }
       ],
       "providedExports": null,
@@ -1212,7 +1212,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-core-library",
-          "loc": "52:12-23"
+          "loc": "54:12-23"
         },
         {
           "moduleId": "KnG4",
@@ -1221,7 +1221,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-core-library",
-          "loc": "52:33-48"
+          "loc": "54:33-48"
         },
         {
           "moduleId": "KnG4",
@@ -1230,7 +1230,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-core-library",
-          "loc": "80:19-26"
+          "loc": "81:19-26"
         }
       ],
       "providedExports": null,
@@ -1300,7 +1300,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "./FeedbackWebPart.module.scss",
-          "loc": "46:70-76"
+          "loc": "48:70-76"
         },
         {
           "moduleId": "KnG4",
@@ -1309,7 +1309,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "./FeedbackWebPart.module.scss",
-          "loc": "70:56-62"
+          "loc": "71:56-62"
         }
       ],
       "providedExports": [
@@ -1363,7 +1363,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-webpart-base",
-          "loc": "107:2-23"
+          "loc": "108:2-23"
         }
       ],
       "providedExports": null,
@@ -1414,7 +1414,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "FeedbackWebPartStrings",
-          "loc": "90:37-68"
+          "loc": "91:37-68"
         },
         {
           "moduleId": "KnG4",
@@ -1423,7 +1423,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "FeedbackWebPartStrings",
-          "loc": "94:39-61"
+          "loc": "95:39-61"
         },
         {
           "moduleId": "KnG4",
@@ -1432,7 +1432,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "FeedbackWebPartStrings",
-          "loc": "97:43-69"
+          "loc": "98:43-69"
         }
       ],
       "providedExports": null,
@@ -1591,7 +1591,7 @@
           "moduleName": "./lib/webparts/feedback/FeedbackWebPart.js",
           "type": "harmony import specifier",
           "userRequest": "@microsoft/sp-http",
-          "loc": "66:44-56"
+          "loc": "67:44-56"
         }
       ],
       "providedExports": null,

@@ -36,6 +36,8 @@ export default class FeedbackWebPart extends BaseClientSideWebPart<IFeedbackWebP
      const button: HTMLButtonElement =
        this.domElement.getElementsByTagName("BUTTON")[0] as HTMLButtonElement;
       button.onclick = this.sendFeedback;
+      button.disabled = true;
+
   }
 
   private _commentText : string;
@@ -44,10 +46,12 @@ export default class FeedbackWebPart extends BaseClientSideWebPart<IFeedbackWebP
     debugger;
     let srcElement: HTMLInputElement = event.srcElement as HTMLInputElement;
     this._commentText = escape(srcElement.value);
+    const button: HTMLButtonElement =
+       this.domElement.getElementsByTagName("BUTTON")[0] as HTMLButtonElement;
+    button.disabled = (this._commentText.length === 0);
   } 
   
   private sendFeedback(): void {
-    debugger;
     this.context.statusRenderer.clearError(this.domElement);
     const paragraphElement: HTMLParagraphElement =
       this.domElement.getElementsByClassName(styles.successIndicator)[0] as HTMLParagraphElement;
@@ -62,7 +66,6 @@ export default class FeedbackWebPart extends BaseClientSideWebPart<IFeedbackWebP
       this.context.statusRenderer.renderError(this.domElement, "Feedback can't be saved when running in local workbech.");
       return;
     }
-    debugger;
     const url: string = this.context.pageContext.site.absoluteUrl+"/_api/web/lists/getbytitle('Feedback')/items";
     const item : any = {
           "Title": this._commentText,
