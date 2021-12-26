@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "82f26d6a-130a-4875-a0fe-9984ddea09b6",
+  "alias": "FeedbackWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
+    "group": { "default": "Sharepoint Framework Webparts" },
+    "title": { "default": "Feedback" },
+    "description": { "default": "Collect feedback from Sharepoint Pages" },
+    "officeFabricIconFontName": "NoteForward",
+    "properties": {
+      "hintText": "Type in feedback concerning the page"
+    }
+  }]
+}

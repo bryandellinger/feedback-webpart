@@ -1,0 +1,10 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.input {
+  border: 1px solid gray;
+  width: 50%;    
+  margin: 0px 10px 0px 10px;
+}
+.successIndicator {
+  border: 0px;
+}
